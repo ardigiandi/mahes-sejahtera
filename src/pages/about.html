@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/dist/css/main.css" />
+    <title>About</title>
+  </head>
+  <body>
+    <!-- Start: Navbar -->
+    <nav class="container px-6 mx-auto flex justify-between py-8 items-center">
+      <div>
+        <h1 class="text-2xl font-bold text-[#563AD6]">PT. Mahes Sejahtera</h1>
+      </div>
+      <div class="lg:hidden">
+        <button id="menu-toggle" class="focus:outline-none">
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+      </div>
+      <ul id="menu" class="hidden lg:flex gap-12">
+        <li>
+          <a
+            href="/index.html"
+            class="text-base text-[#666666] hover:text-[#FF652E] hover:font-semibold"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            href="/src/pages/about.html"
+            class="text-base text-[#666666] hover:text-[#FF652E] hover:font-semibold"
+            >About</a
+          >
+        </li>
+        <li>
+          <a
+            href="/src/pages/services.html"
+            class="text-base text-[#666666] hover:text-[#FF652E] hover:font-semibold"
+            >Services</a
+          >
+        </li>
+        <li>
+          <a
+            href="/src/pages/contact.html"
+            class="text-base text-[#666666] hover:text-[#FF652E] hover:font-semibold"
+            >Contact Us</a
+          >
+        </li>
+      </ul>
+      <a
+        href="#"
+        class="text-base text-white bg-[#FF652E] px-6 py-2 rounded-md hidden lg:block"
+        >Let's Talk</a
+      >
+
+      <div
+        id="sidebar"
+        class="fixed top-0 left-0 h-full w-[250px] bg-gray-200 p-5 transform -translate-x-full transition-transform duration-300 ease-in-out z-50"
+      >
+        <ul class="flex flex-col gap-4 pt-8">
+          <li>
+            <a
+              href="/index.html"
+              class="block py-2 text-[#666666] hover:text-[#FF652E]"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="/src/pages/about.html"
+              class="block py-2 text-[#666666] hover:text-[#FF652E]"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="/src/pages/services.html"
+              class="block py-2 text-[#666666] hover:text-[#FF652E]"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a
+              href="/src/pages/contact.html"
+              class="block py-2 text-[#666666] hover:text-[#FF652E]"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- End: Navbar -->
+
+    <!-- Start: About -->
+    <section
+      class="container px-6 mx-auto py-20 flex flex-col lg:flex-row gap-5 lg:gap-0 justify-between bg-[#333333] items-center"
+    >
+      <h1 class="text-5xl font-bold text-white">About Us</h1>
+      <p
+        class="text-base text-white lg:w-[570px] w-full text-center lg:text-left"
+      >
+        Manfaatkan kerangka kerja agile untuk memberikan sinopsis yang kuat
+        untuk tinjauan tingkat tinggi. Pendekatan iteratif dalam strategi
+        perusahaan mendorong pemikiran kolaboratif guna meningkatkan nilai
+        proposisi secara keseluruhan.
+      </p>
+    </section>
+    <!-- End: About -->
+
+    <!-- Start : Experience -->
+    <section
+      class="container px-6 mx-auto py-20 flex flex-col lg:flex-row justify-between gap-7"
+    >
+      <div class="flex flex-col gap-7 lg:w-[596px] w-full">
+        <h1 class="lg:text-4xl text-3xl font-bold">
+          20+ years of experience in software development
+        </h1>
+        <p class="text-sm text-gray-500">
+          Dengan pengalaman lebih dari 20 tahun dalam pengembangan perangkat
+          lunak, kami telah membangun keahlian yang mendalam dalam menciptakan
+          solusi digital yang handal dan inovatif. Sepanjang perjalanan kami,
+          kami telah bekerja dengan berbagai industri, memahami tantangan unik
+          mereka, dan menghadirkan teknologi yang efektif untuk mendukung tujuan
+          bisnis. Pengalaman ini memberi kami keunggulan dalam merancang
+          aplikasi dan platform yang tidak hanya memenuhi kebutuhan saat ini,
+          tetapi juga siap menghadapi perkembangan masa depan. Kami terus
+          berinovasi dan beradaptasi dengan tren teknologi terbaru untuk
+          memastikan hasil terbaik bagi setiap proyek yang kami tangani.
+        </p>
+        <div class="flex flex-col lg:flex-row gap-5">
+          <img
+            src="/dist/image/gambar2.jpg"
+            alt=""
+            class="lg:w-[296px] w-full"
+          />
+          <img
+            src="/dist/image/gambar1.jpg"
+            alt=""
+            class="lg:w-[296px] w-full"
+          />
+        </div>
+      </div>
+      <img src="/dist/image/gambar4.jpg" alt="" class="lg:w-[580px] w-full" />
+    </section>
+    <!-- End : Experience -->
+
+    <!-- Start : Crafting Magnificent Design with Us -->
+    <section
+      class="container px-6 mx-auto py-20 bg-[#563AD6] flex flex-col gap-5 justify-center items-center"
+    >
+      <h1
+        class="lg:text-5xl text-3xl font-bold text-white text-center lg:text-left"
+      >
+        Menciptakan Desain Luar Biasa Bersama Kami
+      </h1>
+      <p class="text-base text-white">Menciptakan Desain Megah Bersama Kami</p>
+      <a href="#" class="bg-[#FF652E] text-sm text-white px-7 py-4 rounded-md"
+        >Let's Talk</a
+      >
+    </section>
+    <!-- End : Crafting Magnificent Design with Us -->
+
+    <!-- Start : Form -->
+    <section
+      class="container px-6 mx-auto py-20 bg-[#EFEDFD] mt-20 flex gap-14 justify-center items-center"
+    >
+      <div class="w-[400px]">
+        <h1 class="text-4xl font-bold">Try our Free Resource</h1>
+        <p class="text-sm text-[#666666] mt-6">
+          Sungguh sumber daya yang baru, Anda dapat mencoba sumber daya kami dan
+          mengeksplorasi cara kerjanya.
+        </p>
+        <form action="" class="mt-10 flex flex-col gap-6">
+          <div class="flex flex-col gap-4">
+            <label for="#">Full Name</label>
+            <input
+              type="text"
+              class="border border-gray-300 px-6 py-4 rounded-md"
+            />
+          </div>
+          <div class="flex flex-col gap-4">
+            <label for="#">Full Name</label>
+            <input
+              type="text"
+              class="border border-gray-300 px-6 py-4 rounded-md"
+            />
+          </div>
+          <div class="mt-4">
+            <a
+              href="#"
+              class="text-base text-white bg-[#FF652E] px-12 py-4 rounded-md"
+              >Send</a
+            >
+          </div>
+        </form>
+      </div>
+      <img
+        src="/dist/image/pic1.jpg"
+        alt=""
+        class="w-[360px] hidden lg:block"
+      />
+    </section>
+    <!-- End : Form -->
+
+    <!-- Start : Footer -->
+    <footer
+      class="container bg-[#1E1254] px-6 mx-auto flex flex-wrap gap-16 lg:gap-0 justify-between py-20"
+    >
+      <div class="flex flex-col gap-5 w-[208px]">
+        <h1 class="text-xl font-bold text-[#FF652E]">PT. Mahes Sejahtera</h1>
+        <p class="text-sm text-white">
+          Mewujudkan Ide Menjadi Realitas Digital dengan Solusi Kreatif dan
+          Teknologi Terbaik.
+        </p>
+        <span class="text-sm text-white">Copyright PT. Mahes Sejahtera</span>
+      </div>
+      <div class="flex flex-col gap-5">
+        <h1 class="text-xl font-bold text-[#FF652E]">Get in Touch</h1>
+        <ul class="flex flex-col gap-3 w-[182px]">
+          <li>
+            <a href="#" class="flex gap-3">
+              <img src="/dist/image/location_on.svg" alt="" />
+              <h1 class="text-sm text-white">Jln H Nurleman</h1>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="flex gap-3">
+              <img src="/dist/image/mail_outline.svg" alt="" />
+              <h1 class="text-sm text-white">MahesaRestu@gmail</h1>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="flex gap-3">
+              <img src="/dist/image/call.svg" alt="" />
+              <h1 class="text-sm text-white">+628123456789</h1>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="flex flex-col gap-5">
+        <h1 class="text-xl font-bold text-[#FF652E]">Service</h1>
+        <ul class="flex flex-col gap-3 w-[182px]">
+          <li>
+            <a href="#">
+              <h1 class="text-sm text-white">UI/UX Design</h1>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <h1 class="text-sm text-white">Web Development</h1>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <h1 class="text-sm text-white">Mobile Development</h1>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <h1 class="text-sm text-white">IT Consultancy</h1>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <h1 class="text-sm text-white">Database Security</h1>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <h1 class="text-sm text-white">QA Testing</h1>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="flex flex-col gap-5">
+        <h1 class="text-xl font-bold text-[#FF652E]">Company</h1>
+        <ul class="flex flex-col gap-3 w-[182px]">
+          <li>
+            <a href="#">
+              <h1 class="text-sm text-white">Service</h1>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <h1 class="text-sm text-white">Features</h1>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <h1 class="text-sm text-white">Our Team</h1>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <h1 class="text-sm text-white">Portfolio</h1>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <h1 class="text-sm text-white">Blog</h1>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <h1 class="text-sm text-white">Contact Us</h1>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <!-- End : Footer -->
+
+    <script src="/dist/script/main.js"></script>
+  </body>
+</html>
