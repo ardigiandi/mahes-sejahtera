@@ -679,24 +679,12 @@ html{
   height: 300px;
 }
 
-.h-\[400px\]{
-  height: 400px;
-}
-
-.h-\[500px\]{
-  height: 500px;
-}
-
 .h-\[552px\]{
   height: 552px;
 }
 
 .h-\[64px\]{
   height: 64px;
-}
-
-.h-\[816px\]{
-  height: 816px;
 }
 
 .h-\[900px\]{
@@ -737,10 +725,6 @@ html{
 
 .w-\[296px\]{
   width: 296px;
-}
-
-.w-\[340px\]{
-  width: 340px;
 }
 
 .w-\[360px\]{
@@ -918,11 +902,6 @@ html{
   background-color: rgb(229 231 235 / var(--tw-bg-opacity, 1));
 }
 
-.bg-purple-600{
-  --tw-bg-opacity: 1;
-  background-color: rgb(147 51 234 / var(--tw-bg-opacity, 1));
-}
-
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
@@ -935,11 +914,6 @@ html{
 .px-0{
   padding-left: 0px;
   padding-right: 0px;
-}
-
-.px-10{
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
 }
 
 .px-12{
@@ -960,11 +934,6 @@ html{
 .px-7{
   padding-left: 1.75rem;
   padding-right: 1.75rem;
-}
-
-.py-10{
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
 }
 
 .py-12{
@@ -995,11 +964,6 @@ html{
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.py-5{
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
 }
 
 .py-8{
@@ -1163,14 +1127,6 @@ html{
 
   .lg\:hidden{
     display: none;
-  }
-
-  .lg\:h-\[400px\]{
-    height: 400px;
-  }
-
-  .lg\:w-\[1000px\]{
-    width: 1000px;
   }
 
   .lg\:w-\[296px\]{

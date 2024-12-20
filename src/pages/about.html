@@ -185,29 +185,31 @@
           Sungguh sumber daya yang baru, Anda dapat mencoba sumber daya kami dan
           mengeksplorasi cara kerjanya.
         </p>
-        <form action="" class="mt-10 flex flex-col gap-6">
+        <form id="contactForm" class="mt-10 flex flex-col gap-6">
           <div class="flex flex-col gap-4">
-            <label for="#">Full Name</label>
-            <input
-              type="text"
-              class="border border-gray-300 px-6 py-4 rounded-md"
-            />
+              <label for="fullName">Full Name</label>
+              <input
+                  type="text"
+                  id="fullName"
+                  name="fullName"
+                  class="border border-gray-300 px-6 py-4 rounded-md"
+                  required
+              />
           </div>
           <div class="flex flex-col gap-4">
-            <label for="#">Full Name</label>
-            <input
-              type="text"
-              class="border border-gray-300 px-6 py-4 rounded-md"
-            />
+              <label for="email">Email</label>
+              <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="border border-gray-300 px-6 py-4 rounded-md"
+                  required
+              />
           </div>
           <div class="mt-4">
-            <a
-              href="#"
-              class="text-base text-white bg-[#FF652E] px-12 py-4 rounded-md"
-              >Send</a
-            >
+              <button type="submit" class="text-base text-white bg-[#FF652E] px-12 py-4 rounded-md">Send</button>
           </div>
-        </form>
+      </form>
       </div>
       <img
         src="/dist/image/pic1.jpg"

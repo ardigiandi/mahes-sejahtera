@@ -71,3 +71,66 @@ document.addEventListener("DOMContentLoaded", () => {
     return emailRegex.test(email);
   }
 });
+
+// FORM 2
+document
+  .getElementById("contactForm")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const fullName = document.getElementById("fullName").value.trim();
+    const email = document.getElementById("email").value.trim();
+
+    if (fullName === "" || email === "") {
+      alert("Please fill out all fields.");
+      return;
+    }
+
+    alert(`Thank you, ${fullName}! We will contact you at ${email}.`);
+    this.reset();
+  });
+
+// FORM 3
+document
+  .getElementById("contactForm")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const firstName = document.getElementById("firstName").value.trim();
+    const lastName = document.getElementById("lastName").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    if (!firstName || !lastName || !email || !message) {
+      alert("Please fill out all fields.");
+      return;
+    }
+
+    alert(
+      `Thank you, ${firstName} ${lastName}! We will contact you at ${email}.`
+    );
+    this.reset();
+  });
+
+// FORM 4
+document.getElementById('contactForm').addEventListener('submit', function (event) {
+  event.preventDefault(); // Mencegah reload halaman saat submit
+
+  // Tangkap data input
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const message = document.getElementById('message').value;
+
+  // Validasi sederhana
+  if (!name || !email || !message) {
+    alert('Please fill out all fields.');
+    return;
+  }
+
+  // Simulasi pengiriman data
+  console.log('Form Data:', { name, email, message });
+  alert('Form submitted successfully!');
+
+  // Reset form
+  document.getElementById('contactForm').reset();
+});

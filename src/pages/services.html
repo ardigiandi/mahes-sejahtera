@@ -205,20 +205,6 @@
     </section>
     <!-- End: Connect -->
 
-    <!-- Start: Vidio -->
-    <section class="container px-6 mx-auto py-5 lg:w-[1000px] w-full h-[500px]">
-      <iframe
-        width="100%"
-        height="100%"
-        src="https://www.youtube.com/embed/bjQF77dxUdg"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-      ></iframe>
-    </section>
-    <!-- End: Vidio -->
-
     <!-- Start : Form -->
     <section
       class="container mx-auto flex flex-col lg:flex-row gap-14 py-20 items-center bg-[#EFEDFD] px-5 lg:px-0"
@@ -226,51 +212,66 @@
       <img src="/dist/image/Map.png" alt="" class="lg:w-[600px] w-full" />
       <div class="flex flex-col gap-10 items-center">
         <h1 class="text-3xl font-bold">Contact Us</h1>
-        <form action="">
+        <form id="contactForm">
           <div class="flex flex-col gap-5 items-start px-5">
             <div class="flex flex-col gap-3">
-              <label class="text-base text-gray-500" for="name"
+              <label class="text-base text-gray-500" for="firstName"
                 >First Name</label
               >
               <input
                 type="text"
-                placeholder="Name"
+                id="firstName"
+                name="firstName"
+                placeholder="First Name"
                 class="border border-gray-300 px-6 py-4 rounded-md lg:w-[400px] w-full"
+                required
               />
             </div>
             <div class="flex flex-col gap-3">
-              <label class="text-base text-gray-500" for="name"
+              <label class="text-base text-gray-500" for="lastName"
                 >Last Name</label
               >
               <input
                 type="text"
-                placeholder="Name"
+                id="lastName"
+                name="lastName"
+                placeholder="Last Name"
                 class="border border-gray-300 px-6 py-4 rounded-md lg:w-[400px] w-full"
+                required
               />
             </div>
             <div class="flex flex-col gap-3">
-              <label class="text-base text-gray-500" for="name"
+              <label class="text-base text-gray-500" for="email"
                 >Your Email</label
               >
               <input
-                type="text"
-                placeholder="Name"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your Email"
                 class="border border-gray-300 px-6 py-4 rounded-md lg:w-[400px] w-full"
+                required
               />
             </div>
             <div class="flex flex-col gap-3">
-              <label class="text-base text-gray-500" for="name">Message</label>
+              <label class="text-base text-gray-500" for="message"
+                >Message</label
+              >
               <textarea
+                id="message"
+                name="message"
                 class="border border-gray-300 px-6 py-4 rounded-md lg:w-[400px] w-full"
                 placeholder="Write your message here..."
+                required
               ></textarea>
             </div>
             <div class="flex mt-4">
-              <a
-                href="#"
+              <button
+                type="submit"
                 class="text-base text-white bg-[#FF652E] px-12 py-4 rounded-md"
-                >Send</a
               >
+                Send
+              </button>
             </div>
           </div>
         </form>

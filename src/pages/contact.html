@@ -180,31 +180,42 @@
           </div>
         </div>
       </div>
-      <div class="lg:w-[500px] w-full flex flex-col gap-5 items-start">
+      <form
+        id="contactForm"
+        class="lg:w-[500px] w-full flex flex-col gap-5 items-start"
+      >
         <input
           type="text"
+          id="name"
+          name="name"
           placeholder="Name"
           class="border border-gray-300 px-6 py-4 rounded-md w-full"
+          required
         />
         <input
-          type="text"
+          type="email"
+          id="email"
+          name="email"
           placeholder="Email"
           class="border border-gray-300 px-6 py-4 rounded-md w-full"
+          required
         />
         <textarea
-          name="message"
           id="message"
+          name="message"
           cols="30"
           rows="10"
           placeholder="Message"
           class="border border-gray-300 px-6 py-4 rounded-md w-full"
+          required
         ></textarea>
-        <a
-          href="#"
+        <button
+          type="submit"
           class="text-base text-white bg-[#FF652E] px-12 py-4 rounded-md"
-          >Send</a
         >
-      </div>
+          Send
+        </button>
+      </form>
     </section>
     <!-- End: Form -->
 
